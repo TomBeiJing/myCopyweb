@@ -1,0 +1,198 @@
+@charset "utf-8";
+body,h1,h2,ul,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none outside none;
+	/*list-style：<' list-style-type '> || <' list-style-position '> || <' list-style-image '>*/
+}
+a {
+	text-decoration: none;
+	/*去下划线*/
+}
+#header {
+	width: 100%;
+	height: 70px;
+	background: #333;
+	/*min-width: 1263px;*/
+	/*加上滚动条的长度为1280px*/
+	
+}
+#header .center{
+	width: 100%;
+	height: 70px;
+	margin: 1 auto;
+}
+#header .logo{
+	width: 240px;
+	height: 70px;
+	background-image: url(../img/logo.png);
+	text-indent: -9999px;
+	/*首行缩进 设置为大的负值，目的是将文字隐去，同时利于SEO搜索*/
+	float: left;
+}
+#header .link{
+	/*background: red;*/
+	height: 70px;
+	float: right;
+	width: 600px;
+	margin-right: 35px;
+}
+#header .link li{
+	float: left;
+	width: 120px;
+	text-align: center;
+	/*文字水平居中*/
+	line-height: 70px;
+	/*文字垂直居中，行高设为与盒子同高即可*/
+	color: #eee；
+
+
+}
+#header .link a{
+	color: #eee;
+	display: block;
+}
+#header .link a:hover{
+	background: #000;
+}
+#header .link .active>a{
+	background: #000;
+}
+
+/* 竖屏 */
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+	#header .logo{
+	display: none;
+}
+	#header .link{
+	width: 100%;
+	margin-right: 0;
+}
+	#header .link li{
+	float: left;
+	width: 20%;
+}
+
+}
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+	#header{
+	height: 45px;
+	}
+	#header .link{
+	height: 45px;
+}
+	#header .link li{
+	line-height: 45px;
+}
+}
+/*如果点中间有个空格：li .active{color:red;}
+
+意思是选择 li 的子元素类名为 active 的元素对其生效：<li><a class="active">Link</a></li>
+
+如果点中间没有空格：li.active{color:red;}
+
+是选择类名为 active 的 li 对其生效：
+
+<li class="active">对我生效</li>
+
+<li>对我无效</li>*/
+.none{
+	display: none;
+}
+
+#centerbox .bottom{
+	clear: both;
+	height: 266px;
+	width: 100%;
+	border-bottom: 2px dashed #333;
+    background: #222;
+}
+#centerbox .bottombox{
+	width: 33.3%;
+	float: left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding: 20px 0 0 20px;
+	background: #222;
+}
+#centerbox .right{
+	padding-right: 20px;
+
+}
+#centerbox .bottombox h1{
+	border-bottom: 2px dashed #333;
+	color: #ccc;
+}
+#centerbox .bottombox a{
+	display: block;
+	font-size: 18px;
+    color: #777;
+    line-height: 2;
+}
+#centerbox .bottombox li{
+	font-size: 18px;
+    color: #777;
+    line-height: 2;
+}
+footer{
+	height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #777;
+    background-color: #000;
+    border-top: 1px solid #444;
+}
+/* 竖屏 */
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:767px){
+	#centerbox .bottom{
+	width: 100%;
+	}
+	#centerbox .bottombox h1{
+	font-size: 18px;
+	}
+	#centerbox .bottombox li{
+	font-size: 16px;
+	}
+	#centerbox .bottombox a{
+	font-size: 16px;
+	}
+}
+/* 窗口宽度<640,设计宽度=480 手机 */
+@media screen and (max-width:639px){
+	/*功能（.f-模块）完全消失	displaynone 缩写 dn*/
+	.f-dn{
+		display: none;
+	}
+	#centerbox .bottombox h1{
+	font-size: 16px;
+	}
+	#centerbox .bottombox li{
+	font-size: 14px;
+	}
+	#centerbox .bottombox a{
+	font-size: 14px;
+	}
+	footer{
+		clear: both;
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+	#centerbox .bottom {
+		display: none;
+	}
+	footer{
+		clear: both;
+		font-size: 12px;
+		line-height: 40px;
+	}
+}

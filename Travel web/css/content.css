@@ -1,0 +1,643 @@
+@charset "utf-8";
+#centerbox main{
+	width: 910px;
+    float: left;
+    /*height: 1000px;*/
+    /*background: blue;*/
+    margin-top: 30px;
+    margin-right: -930px;
+    position: relative;
+}
+#centerbox aside{
+    display: inline-block;
+	width: 100%;
+    float: right;
+    /*height: 1000px;*/
+    /*background: green;*/
+    margin-top: 30px;
+}
+/* 竖屏 */
+/* 窗口宽度<1110,设计宽度=768 */
+@media screen and (max-width:1110px){
+    #centerbox aside{
+        display: none;
+    }
+    #centerbox main{
+        width: 100%;
+    }
+}
+/* 窗口宽度<768,设计宽度=640 */
+/*@media screen and (max-width:960px){
+	#centerbox aside{
+		display: none;
+	}
+    #centerbox main{
+        width: 100%;
+    }
+}*/
+/* 窗口宽度<640,设计宽度=480 */
+/*@media screen and (max-width:639px){
+}*/
+/* 窗口宽度<480,设计宽度=320 */
+/*@media screen and (max-width:479px){
+}*/
+#centerbox aside .sidebox{
+	border: 1px solid #eee;
+    margin: 0 0 10px 930px;
+    text-align: center;
+}
+#centerbox aside .sidebox h2{
+	font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-indent: 8px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fafafa;
+    color: #666;
+    text-align: left;
+}
+#centerbox aside .commend{
+	padding: 10px 0;
+}
+#centerbox aside .commend li{
+	display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin: 2px 0;
+    background-color: #eee;
+    text-align: left;
+    text-indent: 8px;
+    
+}
+
+#centerbox aside .commend li a:hover{
+	color: #fff;
+    background-color: green;
+   
+}
+
+#centerbox aside .commend li a{
+	display: block;
+	color: #999;
+    
+}
+
+#centerbox aside .hottour li{
+	display: inline-block;
+    padding: 4px;
+    color: #666;
+}
+
+#centerbox aside .hottour li a{
+	color: #000;
+}
+#centerbox aside .toolbox li{
+	display: inline-block;
+}
+
+#centerbox aside .toolbox li a{
+	display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 2px 0;
+    text-align: left;
+    text-indent: 35px;
+    color: #999;
+}
+#centerbox aside .toolbox .trea1{
+	background: #eee url(../img/trea1.png) no-repeat 10px center;
+}
+#centerbox aside .toolbox .trea2{
+	background: #eee url(../img/trea2.png) no-repeat 10px center;
+}
+#centerbox aside .toolbox .trea3{
+	background: #eee url(../img/trea3.png) no-repeat 10px center;
+}
+#centerbox aside .toolbox .trea4{
+	background: #eee url(../img/trea4.png) no-repeat 10px center;
+}
+
+#centerbox main .aboutbox{
+	    padding: 0 46px;
+}
+#centerbox main  h2{
+	height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #999;
+    padding: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: #999;
+}
+#centerbox main .aboutbox p{
+	text-indent: 32px;
+    line-height: 2;
+    margin: 20px 0;
+}
+#centerbox main .scenerybox img{
+	/*padding: 0 46px;*/
+    max-width: 100%;
+}
+#centerbox main .scenerybox ul{
+    text-align: center;
+}
+#centerbox main .scenerybox li{
+	border: 1px solid #ddd;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 15px 5px 15px 0;
+    width: 435px;
+    text-align: left;
+}
+#centerbox main .scenerybox li p{
+	text-align: center;
+    padding: 5px 0;
+    color: #666;
+    font-size: 20px;
+}
+#centerbox main .scenerybox .more{
+	width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto 16px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+/* 竖屏 */
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+    #centerbox main .scenerybox li{
+        display: block;
+        margin: 0 auto;
+    }
+    #centerbox main .scenerybox .more{
+        margin-top: 16px;
+    }
+}
+/* 窗口宽度<768,设计宽度=640 */
+/*@media screen and (max-width:767px){
+}*/
+/* 窗口宽度<640,设计宽度=480 */
+/*@media screen and (max-width:639px){
+}*/
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+    #centerbox main .scenerybox li{
+        width: 95%;
+    }
+    #centerbox main .scenerybox li p{
+        font-size: 16px;
+    }
+}
+#centerbox main .bookticket{
+	color: #666;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+/*#centerbox main .bookticket form{
+	background: green;
+
+}*/
+#centerbox main .bookticket .type{
+	margin: 20px 0 10px 0;
+}
+#centerbox main .bookticket .type li{
+	display: inline-block;
+	color: #666;
+    font-size: 20px;
+}
+#centerbox main .bookticket .type  a{
+	color: #666;
+}
+#centerbox main .bookticket .type  .active{
+	display: block;
+	color: #fff;
+    background-color: #458b00;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin: 0 10px 0 16px;
+}
+#centerbox main .bookticket .form_left{
+	width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#centerbox main .bookticket .form_right{
+	width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#centerbox main .bookticket .form_button{
+	width: 15%;
+    display: inline-block;
+    height: 120px;
+    text-align: center;
+    
+}
+#centerbox main .bookticket .form_button button{
+	display: inline-block;
+	width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f60;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#centerbox main .bookticket p{
+    line-height: 3;
+}
+#centerbox main .bookticket input{
+	width: 250px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 5px;
+    margin: 0 0 0 16px;
+    font-size: 18px;
+}
+
+/* 竖屏 */
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+    #centerbox main .bookticket .form_left{
+        width: 100%;
+        display: block;
+        vertical-align: middle;
+    }
+    #centerbox main .bookticket .form_right{
+        width: 100%;
+        display: block;
+        vertical-align: middle;
+    }
+    #centerbox main .bookticket .form_button{
+    width: 95%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    
+}
+    #centerbox main .bookticket .form_button button{
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #centerbox main .bookticket input{
+    width: 90%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 5px;
+    margin: 0 0 0 16px;
+    font-size: 18px;
+}
+}
+
+#centerbox main .newticket .hotcity{
+	margin: 20px 0 0 0;
+}
+#centerbox main .newticket .hotcity li{
+	display: inline-block;
+    padding: 5px 10px;
+    color: #666;
+    font-size: 20px;
+}
+#centerbox main .newticket .hotcity a{
+	color: #666;
+}
+#centerbox main .newticket .hotcity .active{
+	display: inline-block;
+	color: #fff;
+    background-color: #458b00;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin: 0 10px 0 16px;
+}
+#centerbox main .newticket table{
+	margin: 20px 0 0 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+#centerbox main .newticket table td,th{
+	height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+#centerbox main .newticket table .price{
+	color: #f60;
+}
+#centerbox main .newticket table tr:nth-child(2n){
+	background-color: #fafafa;
+}
+/*表格隔行凸显*/
+#centerbox main .newticket table tr:hover{
+	background-color: #eee;
+}
+/*表格选中凸显*/
+
+#centerbox main .informationbox{
+
+}
+#centerbox main .informationbox .top{
+	height: 45px;
+    line-height: 45px;
+    background-color: #eee;
+    margin: 0 0 20px 0;
+}
+#centerbox main .informationbox .top .left{
+	float: left;
+} 
+#centerbox main .informationbox .top .left li{
+	display: inline-block;
+    width: 150px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+#centerbox main .informationbox .top .left .active{
+	background-color: #fff;
+    border-top: 2px solid #458b00;
+    position: relative;
+    left: 1px;
+}
+
+#centerbox main .informationbox .top .right{
+	display: inline-block;
+    padding: 0 20px 0 0;
+    float: right;
+}
+
+#centerbox main .informationbox .top .right li{
+	display: inline-block;
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+#centerbox main .informationbox .top .right .active{
+	background-color: #458b00;
+    color: #fff;
+	
+}
+#centerbox main .informationbox .top .right a:hover{
+	background-color: #458b00;
+    color: #fff;
+}
+#centerbox main .informationbox .top .right a{
+	padding: 4px;
+}
+/* 竖屏 */
+/* 窗口宽度<960,设计宽度=768 */
+/*@media screen and (max-width:959px){
+    
+}*/
+/* 窗口宽度<768,设计宽度=640 */
+/*@media screen and (max-width:767px){
+    
+}*/
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+    #centerbox main .informationbox .top .right{
+        display: block;
+        width: 100%;
+    }
+    #centerbox main .informationbox .top .right li{
+        margin-left: 20px;
+    }
+}
+/* 窗口宽度<480,设计宽度=320 */
+/*@media screen and (max-width:479px){
+}*/
+
+#centerbox main .informationbox .top li{
+	display: inline-block;
+}
+#centerbox main .informationbox  a{
+	    color: #000;
+}
+#centerbox main .informationbox .tourbox{
+    width: 908px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border: 1px solid #eee;
+    position: relative;
+    height: 229px;
+    clear:both;
+}
+#centerbox main .informationbox .tourbox figcaption{
+	display: inline-block;
+}
+#centerbox main .informationbox .tourbox h2{
+	font-size: 24px;
+    color: #333;
+    font-weight: normal;
+    padding: 10px 0 10px 25px;
+    border: none;
+    width: 260px;
+}
+#centerbox main .informationbox .tourbox p{
+	font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    font-weight: normal;
+    padding: 5px 0 5px 25px;
+    width: 260px;
+}
+#centerbox main .informationbox .tourbox img{
+	float: left;
+}
+#centerbox main .informationbox .tourbox ul{
+	padding: 0 0 0 25px;
+    color: #666;
+    line-height: 2;
+
+}
+#centerbox main .informationbox .f-db{
+    display: none;
+}
+#centerbox  .tourbox  mark{
+	background-color: #fff;
+    border: 1px solid #458b00;
+    border-radius: 4px;
+    padding: 0 5px;
+    color: #458b00;
+}
+#centerbox  .tourbox .type{
+	width: 90px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #59b200;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#centerbox  .tourbox .buy{
+	position: absolute;
+    top: 55px;
+    right: 30px;
+}
+#centerbox  .tourbox .price{
+	color: #f60;
+    font-size: 20px;
+}
+#centerbox  .tourbox .price s{
+	font-size: 16px;
+    color: #999;
+}
+#centerbox  .tourbox .price strong{
+	font-size: 36px;
+}
+#centerbox  .tourbox .reserve{
+    margin: 10px 0 0 0;
+}
+#centerbox  .tourbox .reserve a{
+	display: block;
+    width: 152px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f60;
+}
+#centerbox  .tourbox .disc{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background: url(../img/disc.png) no-repeat;
+}
+#centerbox  .tourbox .disc span{
+	display: block;
+    transform: rotate(45deg);
+    width: 52px;
+    height: 52px;
+    padding: 5px 0 0 0;
+    text-indent: 7px;
+    font-size: 14px;
+    color: #ff7a4d;
+}
+
+#centerbox  .tourbox footer{
+	width: 528px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-indent: 25px;
+    background-color: #fafafa;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    text-align: left;
+}
+#centerbox  .tourbox footer time{
+	color: #458b00;
+}
+#centerbox  .informationbox .more{
+	width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto 20px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+/* 竖屏 */
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+    #centerbox main .informationbox .tourbox {
+        width: 90%;
+    }
+    #centerbox main .informationbox .tourbox footer{
+        display: none;
+    }
+    #centerbox main .informationbox .tourbox h2{
+        width: 100%;
+        font-size: 18px;
+    }
+    #centerbox main .informationbox .tourbox .f-dn{
+        display: none;
+    }
+}
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:700px){
+    #centerbox main .informationbox{
+        text-align: center;
+    }
+    #centerbox main .informationbox p{
+        padding: 0;
+    }
+    /*功能（.f-模块）显现 displayblock 缩写 db*/
+    #centerbox main .informationbox .f-db{
+        display: block;
+    }
+    #centerbox main .informationbox .tourbox{
+        display: inline-block;
+        margin:0 auto;
+        width: auto;
+        height: auto;
+    }
+    #centerbox main .informationbox .tourbox figcaption{
+        display: none;
+    }
+    #centerbox main .informationbox .tourbox p{
+        clear: both;
+        display: block;
+        padding: 0;
+        margin:0;
+        width: auto;
+    }
+    #centerbox main .informationbox .tourbox a{
+        display: inline-block;
+        width: 75px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #f60;
+        margin-left: 10px;
+    }
+
+}
+/* 窗口宽度<640,设计宽度=480 */
+/*@media screen and (max-width:639px){
+}*/
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+    #centerbox main .informationbox .tourbox img{
+        width: 100%;
+    }
+}

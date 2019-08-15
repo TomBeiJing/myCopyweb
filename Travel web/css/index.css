@@ -1,0 +1,170 @@
+@charset "utf-8";
+#search {
+	width: 100%;
+	/*min-width: 1263px;*/
+	height: 600px;
+	background: url(../img/search.jpg) center no-repeat;
+	/*text-align: center;
+	line-height: 600px;*/
+	position: relative;
+	text-align: center;
+}
+/*搜索框*/
+#search .center{
+	position: absolute; 
+    width: 600px;
+    height: 60px;
+   /* background-color: #000;*/
+    /* top: 50%; */
+    /* margin: -30px 0 0 331px; */
+    display: inline-block;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#search .sosuo{
+	width: 480px;
+	height: 60px;
+	border: 2px solid #eee;
+	border-right: none;
+	border-radius: 4px 0 0 4px;
+	padding: 0px;
+	color: #666;
+	font-size: 26px;
+	line-height: 60px;
+}
+	/*左上角为起点顺时针转
+border-radius: 左上 右上 右下 左下;
+	*/
+
+#search button{
+	display: inline;
+	height: 60px;
+	width: 120px;
+	float: right;
+	background-color: #fff;
+	border: 2px solid #eee;
+	border-left: none;
+	border-radius: 0 4px 4px 0;
+	padding: 0px;
+	color: #666;
+	font-size: 26px;
+	line-height: 56px;
+	text-align: center;
+}
+/*#centerbox{
+	background: black;
+}*/
+#centerbox .top{
+	text-align: center;
+}
+#centerbox .top h1{
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #666;
+    padding: 28px 0 10px 0;
+    margin: 0;
+}
+#centerbox .top p{
+	color: #666;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+#centerbox .center{
+	text-align: center;
+}
+#centerbox .tripbox{
+	border: 1px solid #ddd;
+	width: 380px;
+	padding: 4px 4px 14px 4px;
+	border-radius: 4px;
+	margin: 15px 12px;
+	text-align: left;
+	position: relative;
+	display: inline-block;
+	background: #fff;
+}
+#centerbox .tripbox img{
+	width: 380px;
+	height: 230px;
+}
+#centerbox .tripbox .note{
+	width: 90px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #59b200;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+#centerbox .tripbox p{
+    color: #777;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 7px 0 5px 0;
+}
+#centerbox .tripbox p span{
+	    color: #333;
+    font-weight: normal;
+}
+#centerbox .tripbox .price{
+    color: #f60;
+    font-size: 14px;
+}
+#centerbox .tripbox strong{
+    font-size: 16px;
+}
+#centerbox .tripbox .hot{
+	float: right;
+    font-size: 15px;
+    color: #999;
+    font-style: normal;
+    position: relative;
+    top: 0px;
+    right: 5px;
+}
+
+/* 竖屏 */
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+   
+}
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:700px){
+    #search {
+		height: 300px;
+    }
+    #search .center {
+    	width: 95%;
+    }
+    #search .center .sosuo{
+    	width: 80%;
+    }
+    #search .center button{
+    	width: 20%;
+    }
+}
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+	#centerbox .tripbox{
+		width: 90%;
+		height: auto;
+		padding: 0 2px;
+		margin: 4px 2px;
+	}
+	#centerbox .tripbox img{
+		width: 100%;
+		height: auto;
+	}
+    
+}
